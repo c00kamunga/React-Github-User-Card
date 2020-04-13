@@ -1,6 +1,8 @@
 import React from 'react';
 import UserCard from './UserCard';
 import Followers from './Followers';
+import styled from 'styled-components';
+
 
 
 class App extends React.Component{
@@ -9,6 +11,7 @@ class App extends React.Component{
   }
   render(){
     return(
+      
       <h1>Github UserCard</h1>
     )
   }
