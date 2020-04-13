@@ -1,33 +1,21 @@
 import React from 'react';
+import UserCard from './UserCard';
+import Followers from './Followers';
 
-class App extends React.Component(){
-constructor(){
-  super();
-  this.state = {
-    user:[],
-    followers:{}
+
+class App extends React.Component{
+  constructor(){
+    super()
   }
-}
-
-componentDidMount(){
-  axios
-  .get(`https://api.github.com/users/c00kamunga`)
-  .then(res => {
-    console.log(res)
-  })
-  .catch(err => {
-    console.log(err)
-  })
-}
-
-
   render(){
     return(
-      <div>
-
-      </div>
+      <h1>Github UserCard</h1>
     )
   }
 }
+
+
+
+
 
 export default App;
